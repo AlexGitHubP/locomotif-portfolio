@@ -24,7 +24,7 @@ class PortfolioController extends Controller
         foreach ($items as $key => $value) {
             $items[$key]->status_nice = mapStatus($value->status);
         }
-        return view('items::list')->with('items', $items);
+        return view('portfolio::list')->with('items', $items);
     }
 
     /**
@@ -34,7 +34,7 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        return view('items::create');
+        return view('portfolio::create');
     }
 
     /**
