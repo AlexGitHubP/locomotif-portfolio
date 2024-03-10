@@ -1,5 +1,5 @@
 @extends('admin::inc/header')
-@section('title', 'Editează articol portolio')
+@section('title', 'Editează articol portfolio')
 @include('admin::inc/generalErrors')
 
 @section('content')
@@ -30,10 +30,10 @@
 	<div class='details-right'>
         <ul class='action-controls'>
 			<li>
-				<a class='general-btn backBtn' href="/admin/portolio">Înapoi</a>
+				<a class='general-btn backBtn' href="/admin/portfolio">Înapoi</a>
 			</li>
 			<li>
-				<a href="/admin/portolio/create" class='iconControl'>
+				<a href="/admin/portfolio/create" class='iconControl'>
 					<span>
 						<svg id="Plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
 							<path id="Plus-2" data-name="Plus" d="M11,5A1,1,0,0,0,9,5V9H5a1,1,0,0,0,0,2H9v4a1,1,0,0,0,2,0V11h4a1,1,0,0,0,0-2H11Z" transform="translate(-4 -4)" fill="#ffffff" fill-rule="evenodd"/>
@@ -49,7 +49,7 @@
     <div class="cms-body">
         <div class="tab-content">
 			<div class="tab-pane active" id="detalii">
-                <form method="POST" action='/admin/portolio/{{$item->id}}'>
+                <form method="POST" action='/admin/portfolio/{{$item->id}}'>
                     @csrf
                     @method('PUT')
                     
