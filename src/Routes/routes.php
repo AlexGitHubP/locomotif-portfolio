@@ -1,5 +1,5 @@
 <?php
 
 Route::group(['middleware'=>'web'], function(){
-	Route::resource('/admin/portfolio', 'Locomotif\Portolio\Controller\PortolioController');
+	Route::resource('/admin/portfolio', 'Locomotif\Portfolio\Controller\PortfolioController');
 });
