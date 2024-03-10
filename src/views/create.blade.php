@@ -1,11 +1,11 @@
 @extends('admin::inc/header')
-@section('title', 'Adaugă portolio')
+@section('title', 'Adaugă portfolio')
 @include('admin::inc/generalErrors')
 
 @section('content')
 <div class='details-bar'><!--details-bar-->
 	<div class='details-left'>
-		<h2>Adaugă articol portolio</h2>
+		<h2>Adaugă articol portfolio</h2>
 	</div>
 	<div class='details-center'>
 		<ul class='details-nav nav-tabs'>
@@ -20,13 +20,13 @@
 		</ul>
 	</div>
 	<div class='details-right'>
-		<a class='general-btn backBtn' href="/admin/portolio">Înapoi</a>
+		<a class='general-btn backBtn' href="/admin/portfolio">Înapoi</a>
 	</div>
 </div><!--details-bar-->
 
 <div class="content-container">
     <div class="cms-body">
-	<form method="POST" action='/admin/portolio/'>
+	<form method="POST" action='/admin/portfolio/'>
 		@csrf
 
 		<div class='flex-inputs flex100'>
