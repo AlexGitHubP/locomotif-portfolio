@@ -1,0 +1,26 @@
+{
+    "name": "locomotif/portfolio",
+    "description": "Portfolio module for Locomotif CMS.",
+    "type": "module",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Alex Popa",
+            "email": "p.alexandruadrian@yahoo.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Locomotif\\Portfolio\\PortfolioServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+       "psr-4": {
+           "Locomotif\\Portfolio\\": "src/"
+        }
+    }
+}
