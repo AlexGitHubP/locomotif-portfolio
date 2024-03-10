@@ -4,7 +4,7 @@
 @section('content')
 <div class='details-list'><!--details-list-->
 	<div class='details-left'>
-		<h2>Listă articole portolio</h2>
+		<h2>Listă articole portfolio</h2>
 	</div>
 	<div class='details-right'>
 		<ul class='list-controls'>
@@ -46,7 +46,7 @@
 	<div class='actions-tab'>
 		<ul class='action-controls'>
 			<li>
-				<a href="/admin/portolio/create" class='iconControl'>
+				<a href="/admin/portfolio/create" class='iconControl'>
 					<span>
 						<svg id="Plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
 							<path id="Plus-2" data-name="Plus" d="M11,5A1,1,0,0,0,9,5V9H5a1,1,0,0,0,0,2H9v4a1,1,0,0,0,2,0V11h4a1,1,0,0,0,0-2H11Z" transform="translate(-4 -4)" fill="#ffffff" fill-rule="evenodd"/>
@@ -84,7 +84,7 @@
 					<p>{{$key+1}}</p>
 				</div>
 				<div class='listing-box flex07'>
-					<p><a href='/admin/portolio/{{$item->id}}/edit'>{{ $item->name }}</a></p>
+					<p><a href='/admin/portfolio/{{$item->id}}/edit'>{{ $item->name }}</a></p>
 				</div>
 				<div class='listing-box flex03 alignCenter'>
 					<p>{{\Carbon\Carbon::parse($item->created_at)->format('Y-d-m')}}</p>
@@ -101,7 +101,7 @@
 						</svg>			  
 						<ul class='more-list'>
 							<li>
-								<form action="/admin/portolio/{{ $item->id }}" method="POST">@method('DELETE') @csrf <input type="submit" value="Șterge"/></form>
+								<form action="/admin/portfolio/{{ $item->id }}" method="POST">@method('DELETE') @csrf <input type="submit" value="Șterge"/></form>
 							</li>
 						</ul>
 					</div>
